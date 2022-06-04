@@ -59,23 +59,4 @@ router.get("/ms/:id",(req,res) =>{
 });
 
 
-//update posts
-router.put('/ms/update/:id',(req,res)=>{
-    MS.findByIdAndUpdate(
-        req.params.id,
-        {
-            $set:req.body
-        },
-        (err,post)=>{
-            if(err){
-                return res.status(400).json({error:err});
-
-            }
-            return res.status(200).json({
-                success:"Updated Succesfully"
-            });
-        }
-    );
-});
-
 module.exports = router;
