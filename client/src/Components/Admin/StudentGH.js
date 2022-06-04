@@ -79,7 +79,7 @@ class StudentGH extends Component {
                 <ul class="navbar-nav ">
                   <li class="nav-item">
                       <div >
-                    <button className="btn btn-success" ><a href="/dashboard" style={{ textDecoration: 'none', color: 'white' }}>Dashboad</a> </button>
+                    <button className="btn btn-success" ><a  href="/dashboard" style={{ textDecoration: 'none', color: 'white' }}>Dashboad</a> </button>
                     </div>
                   </li>
                 </ul>
