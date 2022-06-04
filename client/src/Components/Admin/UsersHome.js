@@ -109,7 +109,7 @@ export default class UserHome extends Component {
                 <a className="btn btn-warning text-dark" href={`/UE/${posts._id}`}>
                     <i className="fas fa-edit"></i>&nbsp; Edit
                   </a>&nbsp; &nbsp;
-                  <a className="btn btn-danger text-dark " href="#" onClick={() => this.onDelete(posts._id)} >
+                  <a className="btn btn-danger text-dark"  href="#" onClick={() => this.onDelete(posts._id)} >
                     <i className="far fa-trash-alt"></i>&nbsp;Delete
                   </a>
                 </td>
