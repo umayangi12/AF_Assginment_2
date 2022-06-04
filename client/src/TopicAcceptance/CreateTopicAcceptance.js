@@ -35,7 +35,7 @@ export default class CreateTopicAcceptance extends Component {
         }
 
 
-
+        //add the status of topic to database
 
         axios.post("/topicacceptance/save", data).then((res) => {
 
@@ -72,9 +72,9 @@ export default class CreateTopicAcceptance extends Component {
                         </div>
                     </div>
                 </nav>
-                <br/>
+                <br />
                 <center>
-                <h1>Add Topic Status</h1>
+                    <h1>Add Topic Status</h1>
                 </center>
 
 

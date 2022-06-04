@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
-
+//topic acceptance schema
 const topicacceptSchema = new Schema({
     studentgroupid: {
         type: String,
