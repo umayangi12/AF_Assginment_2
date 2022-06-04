@@ -23,6 +23,29 @@ export default class CreateCoSupReq extends Component {
         })
     }
 
+    btnDemo = (e) => {
+        e.preventDefault();
+        const { tlsname, tlsid, cosupname, cosupemail } = this.state;
+        const data = {
+            tlsname: tlsname,
+            tlsid: tlsid,
+            cosupname: cosupname,
+            cosupemail: cosupemail
+
+        }
+        console.log(data)
+
+        this.setState(
+            {
+                tlsname: "Umaya Ekanayake",
+                tlsid: "IT20252236",
+                cosupname: "Miss.P. Weerassoriya",
+                cosupemail: "wee@gmail.com"
+            }
+            
+        )
+    }
+
     onSubmit = (e) => {
         e.preventDefault();
         const { tlsname, tlsid, cosupname, cosupemail } = this.state;
@@ -140,6 +163,13 @@ export default class CreateCoSupReq extends Component {
                                     <i className="far fa-check-square" ></i>
                                     &nbsp; Send Request
                                 </a>
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                <button className="btn btn-success btn-lg text-dark" type="submit" style={{ marginTop: '15px' }} onClick={this.btnDemo}>
+                                    <i class='fas fa-bookmark'></i>
+                                    &nbsp; <b>Demo</b>
+                                </button>
                             </center>
 
 

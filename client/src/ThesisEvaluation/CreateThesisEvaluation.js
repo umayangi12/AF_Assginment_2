@@ -33,7 +33,7 @@ export default class CreateThesisEvaluation extends Component {
 
 
 
-
+        //add marks of thesis 
         axios.post("/thesisevaluation/save", data).then((res) => {
 
             if (res.data.success) {
@@ -68,12 +68,12 @@ export default class CreateThesisEvaluation extends Component {
                         </div>
                     </div>
                 </nav>
-                <br/>
+                <br />
                 <center>
-                <h1>Add Final Thesis Marks</h1>
+                    <h1>Add Final Thesis Marks</h1>
                 </center>
 
-                <br/>
+                <br />
 
 
                 <br />

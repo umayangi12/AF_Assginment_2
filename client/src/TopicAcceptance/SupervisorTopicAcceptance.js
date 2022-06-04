@@ -14,6 +14,7 @@ export default class SupervisorTopicAcceptance extends Component {
         this.retrivePosts();
     }
 
+    //get topic acceptance details
     retrivePosts() {
         axios.get("/topicacceptance").then(res => {
             if (res.data.success) {
@@ -25,6 +26,7 @@ export default class SupervisorTopicAcceptance extends Component {
         })
     }
 
+    //delete a topic status record
     onDelete = (id) => {
         if (window.confirm('Are You Sure?')) {
             window.location.reload(false);
@@ -87,12 +89,12 @@ export default class SupervisorTopicAcceptance extends Component {
                         </div>
                     </div>
                 </nav>
-                <br/>
+                <br />
                 <center>
-                <h1>Topic Status</h1>
+                    <h1>Topic Status</h1>
                 </center>
 
-                <br/>
+                <br />
 
                 <table class="table" style={{ marginLeft: "30px" }}>
                     <thead>

@@ -37,7 +37,7 @@ export default class EditPaymentTO extends Component {
         }
 
 
-
+        //update topic status
         axios.put(`/topicacceptance/update/${id}`, data).then((res) => {
             let path = "/supervisorstatus"
             if (res.data.success) {
@@ -85,7 +85,7 @@ export default class EditPaymentTO extends Component {
     render() {
         return (
             <div >
-                   <nav class="navbar navbar-expand-lg nav" style={{ marginTop: '5%' }}>
+                <nav class="navbar navbar-expand-lg nav" style={{ marginTop: '5%' }}>
                     <div class="container-fluid">
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav ">
@@ -98,12 +98,12 @@ export default class EditPaymentTO extends Component {
                         </div>
                     </div>
                 </nav>
-                <br/>
+                <br />
                 <center>
-                <h1>Edit Topic status</h1>
+                    <h1>Edit Topic status</h1>
                 </center>
 
-                <br/>
+                <br />
                 <div class="card" style={{ width: '50rem', marginLeft: '22%' }}>
                     <div class="card-body">
                         <form>

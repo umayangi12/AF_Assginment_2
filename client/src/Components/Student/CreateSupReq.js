@@ -24,6 +24,29 @@ export default class CreateSupReq extends Component {
         })
     }
 
+    btnDemo = (e) => {
+        e.preventDefault();
+        const { sname, sid, supname, supemail } = this.state;
+        const data = {
+            sname: sname,
+            sid: sid,
+            supname: supname,
+            supemail: supemail
+
+        }
+        console.log(data)
+
+        this.setState(
+            {
+                sname: "Umaya Ekanayake",
+                sid: "IT20252236",
+                supname: "Mr.K. Rajapaksha",
+                supemail: "rajapaksha@gmail.com"
+            }
+            
+        )
+    }
+
     onSubmit = (e) => {
         e.preventDefault();
         const { sname, sid, supname, supemail } = this.state;
@@ -141,6 +164,13 @@ export default class CreateSupReq extends Component {
                                     <i className="far fa-check-square" ></i>
                                     &nbsp; Send Request
                                 </a>
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                <button className="btn btn-success btn-lg text-dark" type="submit" style={{ marginTop: '15px' }} onClick={this.btnDemo}>
+                                    <i class='fas fa-bookmark'></i>
+                                    &nbsp; <b>Demo</b>
+                                </button>
                             </center>
 
 

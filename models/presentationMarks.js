@@ -41,22 +41,6 @@ const presentationMarkSchema = new mongoose.Schema({
         PanelNo:{
             type:Number,
             required:true
-        },
-        Mark1:{
-            type:Number,
-            required:true
-        },
-        Mark2:{
-            type:Number,
-            required:true
-        },
-        Mark3:{
-            type:Number,
-            required:true
-        },
-        Mark4:{
-            type:Number,
-            required:true
         }
     });
     
