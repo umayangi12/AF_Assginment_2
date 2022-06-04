@@ -4,19 +4,7 @@ import axios from 'axios';
 export default class PMarking extends Component{
 
  
-    // generatePDF = ()=>{
-    //     var doc = new jsPDF("p","pt","a2");
-    //     doc.html(document.querySelector("#content"), {
-    //         callback: function(pdf){
-                
-    //             pdf.save("salary.pdf");
-    //         }
-    //     });
-
-    // };
-
-
-
+  
 
     constructor(props) {
         super(props);
@@ -395,8 +383,7 @@ export default class PMarking extends Component{
 
 
 
-            {/* <button className="btn btn-secondary" onClick={this.generatePDF} type="primary">  Generate PDF Report </button> */}
-            </div>
+              </div>
         );
     }
 }
