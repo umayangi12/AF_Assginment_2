@@ -14,6 +14,7 @@ export default class SupervisorThesisEvaluation extends Component {
         this.retrivePosts();
     }
 
+    //supervisor views thesis marks
     retrivePosts() {
         axios.get("/thesisevaluation").then(res => {
             if (res.data.success) {
@@ -59,7 +60,7 @@ export default class SupervisorThesisEvaluation extends Component {
         return (
 
             <div>
- <nav class="navbar b">
+                <nav class="navbar b">
                     <div class="container">
                         <form class="d-flex nav1 " role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" onChange={this.handleSearchArea}></input>
@@ -84,12 +85,12 @@ export default class SupervisorThesisEvaluation extends Component {
                         </div>
                     </div>
                 </nav>
-                <br/>
+                <br />
                 <center>
-                <h1>Final Thesis Marks</h1>
+                    <h1>Final Thesis Marks</h1>
                 </center>
 
-                <br/>
+                <br />
 
                 <table class="table" style={{ marginLeft: "30px" }}>
                     <thead>
