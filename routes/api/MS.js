@@ -3,7 +3,7 @@ const MS = require('../../models/MS');
 
 const router = express.Router();
 
-//save posts
+//save details
 
 router.post('/ms/save',(req,res)=>{
 
@@ -76,18 +76,6 @@ router.put('/ms/update/:id',(req,res)=>{
             });
         }
     );
-});
-
-//delete post
-router.delete('/ms/delete/:id',(req,res) =>{
-    MS.findByIdAndRemove(req.params.id).exec((err,deletedpost) =>{
-        if(err) return res.status(400).json({
-            message:"Delete Unsuccesfull",err
-        });
-        return res.json({
-            message:"Delete Successfull",deletedpost
-        }); 
-    });
 });
 
 module.exports = router;
