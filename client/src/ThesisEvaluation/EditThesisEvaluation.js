@@ -36,7 +36,7 @@ export default class EditThesisEvaluation extends Component {
         }
 
 
-
+        //update thesis marks
         axios.put(`/thesisevaluation/update/${id}`, data).then((res) => {
             let path = "/supervisorthesisevaluation"
             if (res.data.success) {
@@ -80,7 +80,7 @@ export default class EditThesisEvaluation extends Component {
     render() {
         return (
             <div >
-                       <nav class="navbar navbar-expand-lg nav" style={{ marginTop: '5%' }}>
+                <nav class="navbar navbar-expand-lg nav" style={{ marginTop: '5%' }}>
                     <div class="container-fluid">
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav ">
@@ -93,12 +93,12 @@ export default class EditThesisEvaluation extends Component {
                         </div>
                     </div>
                 </nav>
-                <br/>
+                <br />
                 <center>
-                <h1>Edit Final Thesis Marks</h1>
+                    <h1>Edit Final Thesis Marks</h1>
                 </center>
 
-                <br/>
+                <br />
                 <div class="card" style={{ width: '50rem', marginLeft: '22%' }}>
                     <div class="card-body">
                         <form>
