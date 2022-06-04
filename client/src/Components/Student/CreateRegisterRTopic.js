@@ -14,6 +14,28 @@ export default class CreateRegisterRTopic extends Component {
         }
     }
 
+    btnDemo = (e) => {
+        e.preventDefault();
+        const { groupID, rfield, rtopic, tdetails } = this.state;
+        const data = {
+            groupID: groupID,
+            rfield: rfield,
+            rtopic: rtopic,
+            tdetails: tdetails
+
+        }
+        console.log(data)
+
+        this.setState(
+            {
+            groupID: "GID001",
+            rfield: "Information Technology",
+            rtopic: "Software Engineering",
+            tdetails: "References from google scholar"
+            }
+        )
+    }
+
     handleInputChange = (e) => {
         const { name, value } = e.target;
 
@@ -137,6 +159,13 @@ export default class CreateRegisterRTopic extends Component {
                                     <i className="far fa-check-square" ></i>
                                     &nbsp; Register
                                 </a>
+                                &nbsp;
+                                &nbsp;
+                                &nbsp;
+                                <button className="btn btn-success btn-lg text-dark" type="submit" style={{ marginTop: '15px' }} onClick={this.btnDemo}>
+                                    <i class='fas fa-bookmark'></i>
+                                    &nbsp; <b>Demo</b>
+                                </button>
                             </center>
 
 
